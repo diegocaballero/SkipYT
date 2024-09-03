@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Play Button Checker",
+    "version": "1.0.0",
+    "description": "Checks for the presence of a YouTube play button.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
